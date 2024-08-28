@@ -1,0 +1,319 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&display=swap'); */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    font-family: latha;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(images/foodd.jpg)no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* border: 3px solid green; */
+}
+
+.box {
+    width: 900px;
+    float: right;
+    /* border: 1px solid black; */
+}
+
+/* .box ul {
+    display: flex;
+    justify-content: right;
+} */
+
+.box ul li {
+    /*width: 120px;*/
+    padding: 10px 32px;
+    float: left;
+    margin: 10px auto;
+    text-align: center;
+    list-style: none;
+    transition: all .55s ease;
+}
+
+.box ul li a {
+    padding: 20px 20px;
+    text-decoration: none;
+    color: darkgray;
+    transition: all .55s ease;
+}
+
+.box ul li:hover {
+    background-color: green;
+    /* color: white; */
+}
+
+.box ul li a:hover {
+    color: white;
+}
+
+.banner {
+    margin: 0px 10px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.wd {
+    width: 400px;
+    height: 519px;
+    background-color: black;
+    opacity: 0.9;
+    padding: 55px;
+}
+
+.wd h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100px;
+}
+
+.wd h4 {
+    text-align: justify;
+    color: darkgray;
+    font-weight: normal;
+    /* width: 40px; */
+    margin-top: 12px;
+    line-height: 1.5rem;
+    /* border: 1px solid green; */
+}
+
+.wd h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 40px auto;
+}
+
+.form {
+    width: 35%;
+    margin: auto;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: all .55s ease;
+}
+
+button:hover {
+    background-color: green;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.menus {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-items {
+    flex-basis: 32%;
+}
+
+.single-menu img {
+    max-width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+    padding: 3px;
+    transition: .3s;
+}
+
+.title {
+    background-color: #ff7720;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.single-menu {
+    background-color: #333;
+    border: 1px solid #ddd;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    transition: all .3s;
+    margin-bottom: 30px;
+}
+
+/* .single-menu:hover {
+    border-color: #ff7720;
+    border-radius: 7px;
+} */
+
+/* .single-menu img:hover {
+    border-radius: 50%;
+} */
+
+.single-menu h4 {
+    border-bottom: 1px dashed #ddd;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    /* text-transform: capitalize; */
+    font-size: 24px;
+}
+
+.single-menu a {
+    display: inline-block;
+    color: #ff7720;
+    text-transform: uppercase;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.single-menu span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #ff7720;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px 0 0 0;
+}
+
+#menu::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: -1;
+    opacity: .7;
+    left: 0;
+    top: 0;
+}
+
+#menu {
+    background: url('/images/pexels-pixabay-54455.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -2;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.section-title h4 {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#private-events::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #020202;
+    z-index: -1;
+    opacity: .7;
+    left: 0;
+    top: 0;
+}
+
+#private-events {
+    background: url('/images/pexels-keesha-s-kitchen-22731136-13915043.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 650px;
+    z-index: -2;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#private-events h1 {
+    font-family: impact;
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 0.063rem;
+    line-height: 4.95rem;
+    margin-bottom: 3rem;
+}
+
+#private-events h3 {
+    font-family: arial;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0.056rem;
+    line-height: 1.575rem;
+    margin-bottom: 2rem;
+}
+
+#private-events a {
+    font-family: arial;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.056rem;
+    line-height: 1.575rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#about {
+    background: rgba(128, 128, 128, .2);
+    color: black;
+    text-align: center;
+    height: 425px;
+}
+
+#about h1 {
+    font-family: impact;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 0.063rem;
+    line-height: 4.95rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* letter-spacing: 0.063rem; */
+    line-height: 1.95rem;
+    margin-bottom: 1rem;
+}
+
+#contact {
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    text-align: center;
+}
+
+.insta:hover, .facebook:hover, .whatsapp:hover, .x:hover {
+    opacity: .5;
+}
+
+.icons {
+    padding: 10px 20px;
+    font-size: 3rem;
+}
+
+.icons a {
+    color: white;
+}
